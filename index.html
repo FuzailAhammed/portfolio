@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Premium Portfolio — Fuzail Ahammed</title>
+  <meta name="description" content="Premium, accessible personal portfolio for elite professionals." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased selection:bg-indigo-200/60">
+  <a href="#main" class="skip-link">Skip to content</a>
+  <header class="sticky top-0 z-40 backdrop-blur supports-[backdrop-filter]:bg-white/50 dark:supports-[backdrop-filter]:bg-neutral-900/50 border-b border-slate-200/40 dark:border-neutral-800">
+    <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4" aria-label="Primary">
+      <div class="flex items-center justify-between">
+        <a href="#" class="group inline-flex items-center gap-3" aria-label="Home">
+          <!-- <span class="h-10 w-10 rounded-full bg-gradient-to-br from-indigo-500 to-teal-400 ring-2 ring-indigo-200/50 shadow-lg"></span> -->
+           <img 
+              src="images/fuzail image.jpg" 
+              alt="Fuzail Ahammed" 
+              class="h-10 w-10 rounded-full ring-2 ring-indigo-200/50 shadow-lg object-cover"
+            />
+
+          <div>
+            <h1 class="text-xl font-extrabold tracking-tight">Fuzail Ahammed</h1>
+            <!-- <p class="text-sm text-slate-500 dark:text-slate-400">Software Engineer @ Tech Mahindra</p> -->
+          </div>
+        </a>
+        <ul class="hidden lg:flex items-center gap-6 text-sm font-medium">
+          <li><a class="hover:text-indigo-600 focus-visible:outline-indigo-500" href="#about">About</a></li>
+          <li><a class="hover:text-indigo-600 focus-visible:outline-indigo-500" href="#skills">Skills</a></li>
+          <li><a class="hover:text-indigo-600 focus-visible:outline-indigo-500" href="#projects">Projects</a></li>
+          <li><a class="hover:text-indigo-600 focus-visible:outline-indigo-500" href="#experience">Experience</a></li>
+          <li><a class="hover:text-indigo-600 focus-visible:outline-indigo-500" href="#awards">Awards</a></li>
+          <li><a class="hover:text-indigo-600 focus-visible:outline-indigo-500" href="#testimonials">Testimonials</a></li>
+          <li><a class="hover:text-indigo-600 focus-visible:outline-indigo-500" href="#contact">Contact</a></li>
+        </ul>
+        <div class="flex items-center gap-2">
+          <a href="#contact" class="inline-flex items-center rounded-lg bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow hover:bg-indigo-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Hire me</a>
+          <!-- <button class="md:hidden inline-flex items-center justify-center rounded-md p-2 text-slate-600 hover:bg-slate-100 dark:hover:bg-neutral-800" aria-controls="mobile-menu" aria-expanded="false" id="menuBtn" aria-label="Open navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button> -->
+          <button 
+            class="lg:hidden inline-flex items-center justify-center rounded-md p-2 
+                  text-slate-600 hover:bg-slate-100 dark:hover:bg-neutral-800"
+            aria-controls="mobile-menu"
+            aria-expanded="false"
+            id="menuBtn"
+            aria-label="Open navigation"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" 
+                viewBox="0 0 24 24" stroke="currentColor" fill="none">
+              <path d="M4 6h16M4 12h16M4 18h16" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+
+        </div>
+      </div>
+      <div id="mobile-menu" class="lg:hidden hidden mt-3">
+        <ul class="grid gap-2 text-sm font-medium p-3 rounded-lg border border-slate-200 dark:border-neutral-800">
+          <li><a class="block rounded px-3 py-2 hover:bg-slate-100 dark:hover:bg-neutral-800" href="#about">About</a></li>
+          <li><a class="block rounded px-3 py-2 hover:bg-slate-100 dark:hover:bg-neutral-800" href="#skills">Skills</a></li>
+          <li><a class="block rounded px-3 py-2 hover:bg-slate-100 dark:hover:bg-neutral-800" href="#projects">Projects</a></li>
+          <li><a class="block rounded px-3 py-2 hover:bg-slate-100 dark:hover:bg-neutral-800" href="#experience">Experience</a></li>
+          <li><a class="block rounded px-3 py-2 hover:bg-slate-100 dark:hover:bg-neutral-800" href="#awards">Awards</a></li>
+          <li><a class="block rounded px-3 py-2 hover:bg-slate-100 dark:hover:bg-neutral-800" href="#testimonials">Testimonials</a></li>
+          <li><a class="block rounded px-3 py-2 hover:bg-slate-100 dark:hover:bg-neutral-800" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <!-- HERO -->
+    <section id="about" class="pt-16 lg:pt-24">
+      <div class="relative grid gap-10 lg:grid-cols-2 items-center">
+        <div class="reveal">
+          <p class="inline-flex items-center gap-2 rounded-full border border-slate-200 dark:border-neutral-800 px-3 py-1 text-xs text-slate-600 dark:text-slate-300">Open to consulting • Remote-friendly</p>
+          <h2 class="mt-4 text-4xl sm:text-5xl font-extrabold tracking-tight leading-[1.1]">Fuzail Ahammed</h2>
+          <p class="mt-4 text-lg text-slate-600 dark:text-slate-300 max-w-prose">Software Engineer @ Tech Mahindra</p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="#projects" class="inline-flex items-center gap-2 rounded-xl bg-indigo-600 px-5 py-3 text-white font-semibold shadow hover:bg-indigo-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+              <span>View projects</span>
+            </a>
+            <a href="#contact" class="inline-flex items-center gap-2 rounded-xl border border-slate-300 dark:border-neutral-700 px-5 py-3 font-semibold hover:bg-slate-100 dark:hover:bg-neutral-800">
+              <span>Get in touch</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Preview Mockup -->
+        <div class="reveal perspective-1000">
+          <div class="tilt-3d browser relative">
+            <div class="bar">
+              <span class="dot" aria-hidden="true"></span>
+              <span class="dot" aria-hidden="true"></span>
+              <span class="dot" aria-hidden="true"></span>
+              <span class="ml-2 text-sm text-slate-500 dark:text-slate-400 truncate">@fuzail.design — Portfolio Preview</span>
+            </div>
+            <picture>
+              <source srcset="" type="image/webp">
+              <img
+                src="data:image/svg+xml;utf8,<?xml version='1.0' encoding='UTF-8'?><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 700'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0%' stop-color='%2393c5fd'/><stop offset='100%' stop-color='%2364d3c8'/></linearGradient></defs><rect width='1200' height='700' fill='url(%23g)'/><g opacity='0.15' fill='white'><circle cx='150' cy='120' r='40'/><circle cx='240' cy='180' r='28'/><circle cx='350' cy='100' r='20'/><circle cx='800' cy='160' r='30'/><circle cx='980' cy='90' r='18'/></g><rect x='60' y='60' width='1080' height='80' rx='14' fill='white' opacity='.12'/><rect x='60' y='180' width='660' height='420' rx='16' fill='white' opacity='.2'/><rect x='750' y='180' width='390' height='200' rx='16' fill='white' opacity='.2'/><rect x='750' y='410' width='390' height='190' rx='16' fill='white' opacity='.2'/><text x='90' y='110' font-family='Inter' font-size='36' fill='white' opacity='.9'>Premium Portfolio Preview</text></svg>"
+                alt="Visual preview of a premium portfolio layout"
+                class="w-full h-auto block" />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="pt-20 lg:pt-28">
+      <header class="reveal mb-8">
+        <h2 class="text-3xl font-bold tracking-tight">Core Skills</h2>
+        <p class="text-slate-600 dark:text-slate-300">A snapshot of my technical strengths.</p>
+      </header>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Skill item template replicated with different values -->
+        <figure class="reveal perspective-1000 text-center">
+          <div class="tilt-3d inline-grid place-items-center">
+            <div class="skill-circle" style="--val: 92" role="img" aria-label="Accessibility expertise: 92 percent">
+              <span class="skill-badge child-pop" aria-hidden="true">92%</span>
+            </div>
+          </div>
+          <figcaption class="mt-4 font-semibold">Accessibility (WCAG/ARIA)</figcaption>
+        </figure>
+
+        <figure class="reveal perspective-1000 text-center">
+          <div class="tilt-3d inline-grid place-items-center">
+            <div class="skill-circle" style="--val: 88" role="img" aria-label="Design systems: 88 percent">
+              <span class="skill-badge child-pop" aria-hidden="true">88%</span>
+            </div>
+          </div>
+          <figcaption class="mt-4 font-semibold">Design Systems</figcaption>
+        </figure>
+
+        <figure class="reveal perspective-1000 text-center">
+          <div class="tilt-3d inline-grid place-items-center">
+            <div class="skill-circle" style="--val: 85" role="img" aria-label="React & TypeScript: 85 percent">
+              <span class="skill-badge child-pop" aria-hidden="true">85%</span>
+            </div>
+          </div>
+          <figcaption class="mt-4 font-semibold">React & TypeScript</figcaption>
+        </figure>
+
+        <figure class="reveal perspective-1000 text-center">
+          <div class="tilt-3d inline-grid place-items-center">
+            <div class="skill-circle" style="--val: 80" role="img" aria-label="Motion & 3D UI: 80 percent">
+              <span class="skill-badge child-pop" aria-hidden="true">80%</span>
+            </div>
+          </div>
+          <figcaption class="mt-4 font-semibold">Motion & 3D UI</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="pt-20 lg:pt-28">
+      <header class="reveal mb-8">
+        <h2 class="text-3xl font-bold tracking-tight">Featured Projects</h2>
+        <p class="text-slate-600 dark:text-slate-300">Select work with live previews.</p>
+      </header>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Project Card -->
+        <article class="reveal card p-6 tilt-3d" aria-labelledby="p1-title">
+          <div class="preview mb-4">
+            <img src="data:image/svg+xml;utf8,<?xml version='1.0'?><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 700'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0%' stop-color='%23638ef7'/><stop offset='100%' stop-color='%2310b981'/></linearGradient></defs><rect width='1200' height='700' fill='url(%23g)'/><rect x='80' y='80' width='1040' height='540' rx='24' fill='white' opacity='.12'/><rect x='140' y='170' width='580' height='320' rx='18' fill='white' opacity='.2'/><rect x='760' y='170' width='280' height='140' rx='18' fill='white' opacity='.2'/><rect x='760' y='340' width='280' height='150' rx='18' fill='white' opacity='.2'/><text x='140' y='140' font-size='40' fill='white' opacity='.9' font-family='Inter'>Project Alpha — Commerce UI</text></svg>" alt="Project Alpha preview" class="w-full h-auto" />
+          </div>
+          <h3 id="p1-title" class="text-xl font-bold">Project Alpha — Commerce UI</h3>
+          <p class="mt-2 text-slate-600 dark:text-slate-300">A performant, accessible storefront with real‑time inventory and delightful micro‑interactions.</p>
+          <ul class="mt-3 flex flex-wrap gap-2 text-xs" aria-label="Technologies">
+            <li class="rounded-full bg-slate-100 dark:bg-neutral-800 px-2 py-1">Next.js</li>
+            <li class="rounded-full bg-slate-100 dark:bg-neutral-800 px-2 py-1">TypeScript</li>
+            <li class="rounded-full bg-slate-100 dark:bg-neutral-800 px-2 py-1">ARIA</li>
+          </ul>
+          <div class="mt-4 flex gap-3">
+            <a href="#" class="inline-flex items-center rounded-lg bg-indigo-600 px-3 py-2 text-white text-sm font-semibold hover:bg-indigo-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" aria-label="View live demo of Project Alpha">Live</a>
+            <a href="#" class="inline-flex items-center rounded-lg border border-slate-300 dark:border-neutral-700 px-3 py-2 text-sm font-semibold hover:bg-slate-100 dark:hover:bg-neutral-800">Case Study</a>
+          </div>
+        </article>
+
+        <article class="reveal card p-6 tilt-3d" aria-labelledby="p2-title">
+          <div class="preview mb-4">
+            <img src="data:image/svg+xml;utf8,<?xml version='1.0'?><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 700'><defs><linearGradient id='g2' x1='1' y1='0' x2='0' y2='1'><stop offset='0%' stop-color='%23c084fc'/><stop offset='100%' stop-color='%2360a5fa'/></linearGradient></defs><rect width='1200' height='700' fill='url(%23g2)'/><rect x='80' y='80' width='1040' height='540' rx='24' fill='white' opacity='.12'/><rect x='160' y='160' width='880' height='140' rx='18' fill='white' opacity='.2'/><rect x='160' y='330' width='420' height='220' rx='18' fill='white' opacity='.2'/><rect x='620' y='330' width='420' height='220' rx='18' fill='white' opacity='.2'/><text x='160' y='130' font-size='40' fill='white' opacity='.9' font-family='Inter'>Project Beta — Analytics</text></svg>" alt="Project Beta preview" class="w-full h-auto" />
+          </div>
+          <h3 id="p2-title" class="text-xl font-bold">Project Beta — Analytics Platform</h3>
+          <p class="mt-2 text-slate-600 dark:text-slate-300">Multi‑tenant dashboards with role‑based access, responsive charts, and top‑tier accessibility.</p>
+          <ul class="mt-3 flex flex-wrap gap-2 text-xs" aria-label="Technologies">
+            <li class="rounded-full bg-slate-100 dark:bg-neutral-800 px-2 py-1">React</li>
+            <li class="rounded-full bg-slate-100 dark:bg-neutral-800 px-2 py-1">D3</li>
+            <li class="rounded-full bg-slate-100 dark:bg-neutral-800 px-2 py-1">a11y</li>
+          </ul>
+          <div class="mt-4 flex gap-3">
+            <a href="#" class="inline-flex items-center rounded-lg bg-indigo-600 px-3 py-2 text-white text-sm font-semibold hover:bg-indigo-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" aria-label="View live demo of Project Beta">Live</a>
+            <a href="#" class="inline-flex items-center rounded-lg border border-slate-300 dark:border-neutral-700 px-3 py-2 text-sm font-semibold hover:bg-slate-100 dark:hover:bg-neutral-800">Case Study</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="pt-20 lg:pt-28">
+      <header class="reveal mb-8">
+        <h2 class="text-3xl font-bold tracking-tight">Professional Experience</h2>
+        <p class="text-slate-600 dark:text-slate-300">A timeline of roles and impact.</p>
+      </header>
+      <ol class="reveal relative border-s border-slate-200 dark:border-neutral-800 pl-6">
+        <li class="relative pb-10">
+          <span class="absolute -left-3 top-1.5 h-6 w-6 rounded-full bg-indigo-600 ring-4 ring-indigo-200/50" aria-hidden="true"></span>
+          <div class="space-y-1">
+            <h3 class="font-semibold">Principal UX Engineer — Acme Corp</h3>
+            <p class="text-sm text-slate-500 dark:text-slate-400"><time datetime="2022-06">Jun 2022</time> — Present</p>
+            <p>Led design system adoption across 12 products; improved accessibility scores (WCAG 2.2 AA) and reduced UI bugs by 37%.</p>
+            <p>Built scalable, reusable UI components with React.js, Next.js, Redux Toolkit, and TypeScript.</p>
+            <p>Developed responsive websites for 40+ clients, ensuring cross-browser and cross-device compatibility.</p>
+            <p>Reduced HTTP requests by 80% through frontend performance optimizations</p>
+          </div>
+        </li>
+        <li class="relative">
+          <span class="absolute -left-3 top-1.5 h-6 w-6 rounded-full bg-sky-500 ring-4 ring-sky-200/50" aria-hidden="true"></span>
+          <div class="space-y-1">
+            <h3 class="font-semibold">Associate Software Engineer — Tech Mahindra</h3>
+            <p class="text-sm text-slate-500 dark:text-slate-400"><time datetime="2023-08">Aug 2023</time> — <time datetime="2023-12">Dec 2023</time></p>
+            <p>Built component libraries reducing onboarding time for new devs by 30%.</p>
+            <p>Wrote optimized SQL queries for data extraction and analysis, improving performance by 25%</p>
+            <p>Automated workflows via PL/SQL procedures, reducing manual interventions and increasing reliability</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- AWARDS -->
+    <section id="awards" class="pt-20 lg:pt-28">
+      <header class="reveal mb-8">
+        <h2 class="text-3xl font-bold tracking-tight">Awards & Achievements</h2>
+        <p class="text-slate-600 dark:text-slate-300">Recognition & milestones.</p>
+      </header>
+      <ul class="reveal grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <li class="card p-6 tilt-3d">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-indigo-500 to-teal-400 text-white font-extrabold">A</span>
+            <div>
+              <p class="font-semibold">Awwwards — Site of the Day</p>
+              <p class="text-sm text-slate-500 dark:text-slate-400">2024</p>
+            </div>
+          </div>
+          <p class="mt-3 text-sm">Honored for a fully accessible, performant marketing site.</p>
+        </li>
+        <li class="card p-6 tilt-3d">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-indigo-500 to-teal-400 text-white font-extrabold">G</span>
+            <div>
+              <p class="font-semibold">Google Dev Expert — Web</p>
+              <p class="text-sm text-slate-500 dark:text-slate-400">2023</p>
+            </div>
+          </div>
+          <p class="mt-3 text-sm">Recognized for community impact and open‑source contributions.</p>
+        </li>
+        <li class="card p-6 tilt-3d">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-indigo-500 to-teal-400 text-white font-extrabold">W</span>
+            <div>
+              <p class="font-semibold">Webby — Honoree</p>
+              <p class="text-sm text-slate-500 dark:text-slate-400">2022</p>
+            </div>
+          </div>
+          <p class="mt-3 text-sm">Praised for UX excellence and inclusivity.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="pt-20 lg:pt-28">
+      <header class="reveal mb-8">
+        <h2 class="text-3xl font-bold tracking-tight">Testimonials</h2>
+        <p class="text-slate-600 dark:text-slate-300">What clients & teammates say.</p>
+      </header>
+
+      <div class="reveal card p-6" role="region" aria-roledescription="carousel" aria-label="Testimonials" aria-live="polite">
+        <div class="flex items-center justify-between">
+          <button id="prev" class="rounded-lg border border-slate-300 dark:border-neutral-700 px-3 py-2 text-sm font-semibold hover:bg-slate-100 dark:hover:bg-neutral-800" aria-controls="slides" aria-label="Previous testimonial">Prev</button>
+          <div id="slides" class="relative overflow-hidden w-full mx-4">
+            <ul class="flex transition-transform duration-500" style="will-change: transform;">
+              <li class="min-w-full p-3">
+                <blockquote class="text-lg">Fuzail blends empathy with engineering. Our accessibility score jumped, and customers noticed.”</blockquote>
+                <p class="mt-2 text-sm text-slate-500 dark:text-slate-400">— Alex Rivera, VP Product</p>
+              </li>
+              <li class="min-w-full p-3">
+                <blockquote class="text-lg">“Rock‑solid systems thinking. She elevated our design system and mentored the team with patience.”</blockquote>
+                <p class="mt-2 text-sm text-slate-500 dark:text-slate-400">— Priya Nair, Design Lead</p>
+              </li>
+              <li class="min-w-full p-3">
+                <blockquote class="text-lg">“Performance and polish—delivered on time. I’d rehire in a heartbeat.”</blockquote>
+                <p class="mt-2 text-sm text-slate-500 dark:text-slate-400">— Omar Haddad, CTO</p>
+              </li>
+            </ul>
+          </div>
+          <button id="next" class="rounded-lg border border-slate-300 dark:border-neutral-700 px-3 py-2 text-sm font-semibold hover:bg-slate-100 dark:hover:bg-neutral-800" aria-controls="slides" aria-label="Next testimonial">Next</button>
+        </div>
+        <div class="mt-4 flex items-center justify-center gap-2" role="tablist" aria-label="Testimonials navigation">
+          <button class="dot-btn h-2.5 w-2.5 rounded-full bg-slate-400" aria-label="Go to slide 1" aria-controls="slides" aria-selected="true"></button>
+          <button class="dot-btn h-2.5 w-2.5 rounded-full bg-slate-300" aria-label="Go to slide 2" aria-controls="slides" aria-selected="false"></button>
+          <button class="dot-btn h-2.5 w-2.5 rounded-full bg-slate-300" aria-label="Go to slide 3" aria-controls="slides" aria-selected="false"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="pt-20 lg:pt-28">
+      <header class="reveal mb-8">
+        <h2 class="text-3xl font-bold tracking-tight">Contact</h2>
+        <p class="text-slate-600 dark:text-slate-300">Let's build something remarkable.</p>
+      </header>
+
+      <form class="reveal grid gap-6 md:grid-cols-2" aria-describedby="contact-help">
+        <div class="md:col-span-1">
+          <label for="name" class="block text-sm font-medium">Your Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required
+            class="mt-2 block w-full rounded-lg border border-slate-300 dark:border-neutral-700 bg-white/70 dark:bg-neutral-900/70 px-3 py-2 shadow-sm focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/40" />
+        </div>
+        <div class="md:col-span-1">
+          <label for="email" class="block text-sm font-medium">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required
+            class="mt-2 block w-full rounded-lg border border-slate-300 dark:border-neutral-700 bg-white/70 dark:bg-neutral-900/70 px-3 py-2 shadow-sm focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/40" />
+        </div>
+        <div class="md:col-span-2">
+          <label for="message" class="block text-sm font-medium">Message</label>
+          <textarea id="message" name="message" rows="5" required
+            class="mt-2 block w-full rounded-lg border border-slate-300 dark:border-neutral-700 bg-white/70 dark:bg-neutral-900/70 px-3 py-2 shadow-sm focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/40"></textarea>
+        </div>
+        <p id="contact-help" class="sr-only">All fields are required. Your information will be used to respond to your inquiry.</p>
+        <div class="md:col-span-2 flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <input id="consent" type="checkbox" required class="h-4 w-4 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500">
+            <label for="consent" class="text-sm text-slate-600 dark:text-slate-300">I consent to being contacted about my request.</label>
+          </div>
+          <button type="submit" class="inline-flex items-center rounded-lg bg-indigo-600 px-5 py-3 text-white font-semibold shadow hover:bg-indigo-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Send message</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="pt-20 lg:pt-28 pb-12">
+      <div class="border-t border-slate-200 dark:border-neutral-800 pt-8">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+          <p class="text-sm text-slate-500 dark:text-slate-400">© <span id="year"></span> Fuzail Ahammed. All rights reserved.</p>
+          <ul class="flex items-center gap-4" aria-label="Social links">
+            <li><a class="inline-flex items-center gap-2 rounded px-3 py-2 hover:bg-slate-100 dark:hover:bg-neutral-800" href="https://github.com/FuzailAhammed" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" role="img" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.35-1.76-1.35-1.76-1.1-.75.08-.73.08-.73 1.22.09 1.86 1.25 1.86 1.25 1.08 1.85 2.83 1.32 3.52 1.01.11-.78.42-1.32.76-1.62-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.65.25 2.87.12 3.17.77.84 1.23 1.9 1.23 3.22 0 4.61-2.81 5.63-5.49 5.93.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.58A12 12 0 0 0 12 .5z"/></svg><span class="sr-only">GitHub</span></a></li>
+            <li><a class="inline-flex items-center gap-2 rounded px-3 py-2 hover:bg-slate-100 dark:hover:bg-neutral-800" href="https://linkedin.com/in/fuzail-ahammed-shaik" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" role="img" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55V14.9c0-1.32-.02-3.01-1.83-3.01-1.83 0-2.11 1.43-2.11 2.91v5.65H9.41V9h3.41v1.56h.05c.47-.89 1.63-1.83 3.36-1.83 3.59 0 4.26 2.36 4.26 5.43v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.55V9h3.57v11.45z"/></svg><span class="sr-only">LinkedIn</span></a></li>
+            <li><a class="inline-flex items-center gap-2 rounded px-3 py-2 hover:bg-slate-100 dark:hover:bg-neutral-800" href="#" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" role="img" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.53 7.16c.01.18.01.36.01.55 0 5.62-4.27 12.1-12.1 12.1-2.4 0-4.63-.7-6.5-1.9.33.04.66.05 1 .05 1.99 0 3.82-.68 5.28-1.83-1.86-.04-3.43-1.26-3.97-2.94.26.05.53.08.81.08.39 0 .77-.05 1.13-.15-1.94-.39-3.4-2.1-3.4-4.14v-.05c.57.32 1.22.5 1.92.52-1.14-.76-1.88-2.06-1.88-3.52 0-.78.21-1.52.58-2.15 2.1 2.57 5.25 4.25 8.8 4.43-.07-.31-.11-.64-.11-.97 0-2.36 1.91-4.27 4.27-4.27 1.23 0 2.35.52 3.13 1.35.98-.19 1.9-.55 2.73-1.05-.32 1-1 1.84-1.88 2.37.87-.1 1.69-.34 2.46-.69-.58.86-1.32 1.62-2.16 2.22z"/></svg><span class="sr-only">Twitter</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+      <script src="script.js"></script>
+</body>
+</html>

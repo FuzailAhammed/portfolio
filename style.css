@@ -1,0 +1,183 @@
+:root {
+  --bg: 245 245 247;
+  --fg: 17 24 39;
+  --muted: 107 114 128;
+  --brand: 99 102 241; /* indigo-500 */
+  --accent: 20 184 166; /* teal-500 */
+  --card: 255 255 255;
+  --ring: 191 219 254; /* blue-200 */
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: 9 9 11;
+    --fg: 229 231 235;
+    --muted: 156 163 175;
+    --card: 24 24 27;
+    --ring: 63 63 70;
+  }
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  background: rgb(var(--bg));
+  color: rgb(var(--fg));
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto,
+    Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+/* Skip link */
+.skip-link {
+  position: absolute;
+  left: 0.5rem;
+  top: -3rem;
+  z-index: 50;
+  background: rgb(var(--fg));
+  color: rgb(var(--bg));
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  transition: transform 0.2s;
+}
+.skip-link:focus {
+  top: 0.5rem;
+  outline: 3px solid rgb(var(--ring));
+}
+/* 3D: perspective containers */
+.perspective-1000 {
+  perspective: 1000px;
+}
+.tilt-3d {
+  transform-style: preserve-3d;
+  transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.6s;
+}
+.tilt-3d:hover {
+  transform: rotateX(6deg) rotateY(-6deg) translateZ(6px);
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.25);
+}
+.child-pop {
+  transform: translateZ(40px);
+}
+/* Section reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* Circular skill using conic gradient */
+.skill-circle {
+  --val: 0;
+  width: 140px;
+  height: 140px;
+  border-radius: 9999px;
+  background: conic-gradient(
+    rgb(var(--brand)) calc(var(--val) * 1%),
+    rgba(148, 163, 184, 0.25) 0 100%
+  );
+  display: grid;
+  place-items: center;
+  box-shadow: inset 0 0 0 14px rgba(255, 255, 255, 0.08),
+    0 10px 30px rgba(0, 0, 0, 0.15);
+  position: relative;
+  transform-style: preserve-3d;
+}
+.skill-circle::after {
+  content: "";
+  position: absolute;
+  inset: 12px;
+  background: rgb(var(--card));
+  border-radius: inherit;
+  box-shadow: inset 0 8px 24px rgba(0, 0, 0, 0.15);
+  transform: translateZ(1px);
+}
+.skill-badge {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  font-size: 1.125rem;
+  padding: 0.35rem 0.65rem;
+  border-radius: 0.65rem;
+  background: rgba(99, 102, 241, 0.12);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 6px 18px rgba(99, 102, 241, 0.25);
+}
+.sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+}
+/* Cards */
+.card {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.08),
+    rgba(255, 255, 255, 0.02)
+  );
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  border-radius: 1rem;
+  backdrop-filter: blur(8px);
+}
+.card-dark {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.12));
+}
+/* Project preview 3D */
+.preview {
+  border-radius: 0.875rem;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.6s;
+}
+.preview:hover {
+  transform: translateZ(10px) rotateX(3deg) rotateY(-5deg);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+}
+/* Mock browser frame */
+.browser {
+  border-radius: 16px;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  background: rgb(var(--card));
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.25);
+}
+.browser .bar {
+  height: 42px;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.25);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 12px;
+}
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 9999px;
+  background: #ef4444;
+}
+.dot:nth-child(2) {
+  background: #f59e0b;
+}
+.dot:nth-child(3) {
+  background: #10b981;
+}
+.space-y-1{
+  margin-left: 25px;
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+  .tilt-3d:hover,
+  .preview:hover {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+}
